@@ -38,7 +38,7 @@ Sparkify is a music app, this dataset contains two months of sparkify user behav
 
 ## Result
 
-In this project first I introduced three baseline algorithms in order to predict customer churn rates of a Sparkify app. The best performing one was the gardient boosting algorithm with an Accuracy of over 83% and F1 score of 83%.
+In this project first I introduced three baseline algorithms in order to predict customer churn rates of a Sparkify app. The best performing one was the gardient boosting algorithm with an Accuracy of over 83% and F1 score of 81%.
 
 Second, based on its performance I proceeded with gradient boosting algorithm. Additionally in the second step I applied hyperparameter tuning via grid search. The reason for this strategy is the assumption, that gradient bosting will, despite overfitting, perform best on the wohle dataset.
 

@@ -46,7 +46,7 @@ After the second run of the garadient boosting with hyperparameter tuned, the re
 
 Furthermore, I also examined the most important factors for the churn rate as it is displayed in the feature importance section. The most important factors in customer churn seem to be: the number of songs played per user, user engagement as represented by the thumbs up/down feature and overall listening time.
 
-I post a blog about the detail, you can find it [here]().
+I post a blog about the detail, you can find it [here](https://ibeketov.github.io/DSND_capstone/).
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 

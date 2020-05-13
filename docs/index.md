@@ -23,6 +23,8 @@ Then I test three basic algorithms on this data subset. Based on their perfomanc
 
 The subset of Sparkify data is available in a json format containing roundabout 225 users.
 
+The full dataset is about 12 GB and has data about activities of 22277 users.
+
 Spakrify data has the following structure:
 
 ```
@@ -89,11 +91,19 @@ In the next step I implement gradient boosting with paremeters tuned as follows:
 
 After implementing this strategy the F1 score remains at 83%.
 
+### Modelling on the full dataset
+
+Unfortunately all three algorithm didn't present high perfomance:
+
+|Method|Accuracy|F1 - score|
+|Logistic Regression|0.765062791025822|0.6666129161627117|
+|Random forest|0.7653449978834486|0.6636130235024897|
+|Gradient Boosting|0.7654861013122619|0.6728373820951602|
+
 ### Results and Conclusion
 
 Based on this strategy, the best performing algorithm is gardient boosting.
 
 ![Histogram: Feature importance](./images/features.png "Feature importance")
-
 
 Based on the above visualisation, the factors that influence churn rate most are: number of songs played per user, user engagement as displayed by the number of given thumbs (down or up) and total listening time.

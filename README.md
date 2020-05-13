@@ -34,7 +34,9 @@ Sparkify is a music app, this dataset contains two months of sparkify user behav
 
 ## Files Description<a name="files"></a>
 
-**Sprakify .ipynb** Main file of the project, it demonstrates the process of using pyspark to explore the data and build the model.
+**Sprakify.ipynb** Main file of the project, it demonstrates the process of using pyspark to explore the data and build the model.
+
+**Sprakify_aws.ipynb** The notebook from AWS EMR service.
 
 ## Result
 

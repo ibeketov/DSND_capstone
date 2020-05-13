@@ -21,7 +21,7 @@ Then I test three basic algorithms on this data subset. Based on their perfomanc
 
 ## Data Description and Feature Engineering
 
-The subset of Sparkify data is available in a json format containing roundabout 226 users.
+The subset of Sparkify data is available in a json format containing roundabout 225 users.
 
 Spakrify data has the following structure:
 

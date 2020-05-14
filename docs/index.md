@@ -50,7 +50,7 @@ root
 ```
 Despite being relatively small, the data contains many information about user interaction with the app. In order to extract some relevant information I initially clean and restructure the data.
 
-As a first step I remove the duplicates, null values and some less relevant information. In the second step I calculate some new features based on the existing ones.
+UserId and sessionId are keywords whose behavior is difficult to analyze if they are null, so the null value need to be removed. There are some empty strings in the userId that may be actions of unregistered users from their browsing pages. These users are not related to this churn rate analysis, so they are also removed from the data set.
 
 I also create a churn feature from the dataset based on the "Cancellation Confirmation" and downgrade feature from "Downgrade" and  included them in the dataset.
 
@@ -107,3 +107,7 @@ Based on this strategy, the best performing algorithm is gardient boosting.
 ![Histogram: Feature importance](./images/features.png "Feature importance")
 
 Based on the above visualisation, the factors that influence churn rate most are: number of songs played per user, user engagement as displayed by the number of given thumbs (down or up) and total listening time.
+
+To improve model the upsample of the "churn" category in our training dataset can be used. It will help to fight with the class imbalance which is present. I propose to choose upsample rather than downsampling due to the small number of people present in the small dataset (64 users who churned and 229 who did not). Nonetheless, it is important to leave the test set as is in order for it to be a true representation of what would happen in the real world.
+
+For the big dataset the new features can be added. I would consider tha add user lifetima and region information.

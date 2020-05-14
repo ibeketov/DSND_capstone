@@ -110,4 +110,4 @@ Based on the above visualisation, the factors that influence churn rate most are
 
 To improve model the upsample of the "churn" category in our training dataset can be used. It will help to fight with the class imbalance which is present. I propose to choose upsample rather than downsampling due to the small number of people present in the small dataset (64 users who churned and 229 who did not). Nonetheless, it is important to leave the test set as is in order for it to be a true representation of what would happen in the real world.
 
-For the big dataset the new features can be added. I would consider tha add user lifetima and region information.
+For the big dataset the new features can be added. I would consider add user lifetime and region information.
